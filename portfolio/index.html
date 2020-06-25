@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="hamburgerClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li class="rightnav"><a href="#signin">Sign In</a></li>
+            <li class="rightnav"><a href="#signup">Sign Up</a></li> 
+            <li class="hamburger"><a href="javascript:void(0);" onclick="hamMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    
+    <script>
+        function hamMenu() {
+            var x = document.getElementById("hamburgerClick");
+            if(x.className === "topnav")
+                {
+                x.className += " responsive";
+                }
+            else{
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
